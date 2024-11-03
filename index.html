@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Library</title>
+    <title>TOP - Library</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9e89a9bd43.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h4>TOP - The Library</h4>
+    <header class="header">
+      <div class="container">
+        <h1>Library</h1>
+        <nav>
+          <button class="btn" id="logInBtn">Log In</button>
+        </nav>
+      </div>
+    </header>
+    <main class="main container">
+      <button class="books-grid" id="booksGrid">+ Add Book</button>
+    </main>
+    <footer class="footer">
+      <p>
+        Copyright &#169;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        TrueReplica
+      </p>
+    </footer>
+    <div class="modal" id="addBookModal"></div>
+    <div class="modal" id="accountModal"></div>
+    <div class="overlay" id="overlay"></div>
     <script src="script.js"></script>
   </body>
 </html>
