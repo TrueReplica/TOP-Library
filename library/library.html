@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP - Dashboard with Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="libraryStyles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../icons/book-open-page-variant-outline.svg"
+    />
+  </head>
+  <body>
+    <!-- Application Drawer -->
+    <div class="drawer">
+      <div class="dashboard dashItem">
+        <img src="../icons/view-dashboard.svg" alt="" />
+        <h1>Dashboard</h1>
+      </div>
+      <a class="dashboard dashItem" href="../index.html">
+        <img src="../icons/home.svg" alt="" />
+        <h1>Home</h1>
+      </a>
+      <a class="dashboard dashItem" href="library.html">
+        <img src="../icons/book-open-page-variant-outline.svg" alt="" />
+        <h1>Library</h1>
+      </a>
+      <a class="dashboard dashItem">
+        <img src="../icons/android-messages.svg" alt="" />
+        <h1>Messages</h1>
+      </a>
+      <a class="dashboard dashItem">
+        <img src="../icons/clock-outline.svg" alt="" />
+        <h1>History</h1>
+      </a>
+      <a class="dashboard dashItem">
+        <img src="../icons/note-multiple.svg" alt="" />
+        <h1>Tasks</h1>
+      </a>
+      <a class="dashboard dashItem">
+        <img src="../icons/account-group.svg" alt="" />
+        <h1>Community</h1>
+      </a>
+      <a class="dashboard dashItem">
+        <img src="../icons/cog.svg" alt="" />
+        <h1>Settings</h1>
+      </a>
+      <a class="dashboard dashItem">
+        <img src="../icons/message-question.svg" alt="" />
+        <h1>Support</h1>
+      </a>
+      <a class="dashboard dashItem">
+        <img src="../icons/shield-check.svg" alt="" />
+        <h1>Privacy</h1>
+      </a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+      <!-- Top Section -->
+      <div class="topNav">
+        <!-- Search Icon and Search Bar -->
+        <div class="search">
+          <div class="dashItem">
+            <img src="icons/magnify.svg" alt="" />
+          </div>
+          <input
+            type="text"
+            name="search"
+            placeholder="Search.."
+            autocapitalize="off"
+          />
+        </div>
+
+        <!-- Account -->
+        <div class="account">
+          <div class="dashItem">
+            <img src="icons/bell-ring-outline.svg" alt="" />
+          </div>
+          <!-- ghAvatar -->
+          <div class="avatar"></div>
+          <!-- My Username -->
+          <p class="myUsername">TrueReplica</p>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="bottomNav">
+        <!-- Profile -->
+        <div class="profile">
+          <div class="avatar"></div>
+          <div class="profileName">
+            <p class="greeting">Hi there,</p>
+            <p class="name">
+              TrueReplica <span class="myUsername">(@TrueReplica)</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Books -->
+      <div class="books">
+        <h2>Your Library</h2>
+        <!-- Cards -->
+        <div class="books">
+          <h2>Books</h2>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
+</html>
