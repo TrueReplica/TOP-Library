@@ -79,18 +79,18 @@ body {
   cursor: pointer;
 }
 
-.drawer > div:not(:first-child) > * {
+.drawer > a:not(:first-child) > * {
   padding: 1vw 0.1vw 0.1vw 0vw;
   font-size: calc(20px + 0.2vw);
   padding-left: 20px;
 }
 
-.drawer > div:not(:first-child) > img {
+.drawer > a:not(:first-child) > img {
   width: calc(20px + 0.5vw);
   height: calc(20px + 0.5vw);
 }
 
-.drawer > div:nth-child(8) {
+.drawer > a:nth-child(8) {
   padding-top: 60px;
 }
 
