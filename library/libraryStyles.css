@@ -1,0 +1,208 @@
+.book {
+  position: relative;
+  z-index: 0;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+.book > button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background-color: white;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.book-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  padding-top: 8px;
+  margin-bottom: 1.2rem;
+  margin-top: 0.8rem;
+  font-style: oblique;
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
+}
+
+.book-author {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.book-pages {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+.book-read {
+  display: flex;
+  align-items: center;
+}
+
+.book-read > input {
+  cursor: pointer;
+}
+
+.book-read-title {
+  font-size: 1.3rem;
+  margin-right: 5px;
+}
+.card {
+  border-left: 10px solid rgb(180, 1, 1) !important;
+  max-width: 300px;
+  background-color: rgba(34, 211, 238, 0.3) !important;
+}
+.read-checked {
+  border-left: 10px solid rgb(18, 157, 0) !important;
+}
+.edit-icon {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 48px;
+  top: 14px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content  */
+.modal-content {
+  background-color: #e8e2e2;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  padding: 5px 5px 5px 20px;
+  border: 1px solid #888;
+  width: 350px;
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #a13131;
+  font-size: 28px;
+  margin-bottom: auto;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-title {
+  font-size: xx-large;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.modal-form {
+  margin-right: auto;
+  padding-top: 5px;
+}
+
+.modal-form-input {
+  border: 0;
+  margin-left: auto;
+  margin-right: 20%;
+  background-color: rgba(9, 9, 10, 0.3);
+  padding: 0.6rem 1.6rem;
+  outline-color: var(--blue-1);
+  border-radius: 5px;
+}
+
+.modal-input-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: -4px;
+  left: 8px;
+  height: 24px;
+  width: 24px;
+  background-color: rgba(44, 66, 164, 0.198);
+}
+
+.container:hover input ~ .checkmark {
+  background-color: var(--drawer-color);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--blue-1);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-read {
+  padding-top: 10px;
+}
+
+.submit-modal-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}

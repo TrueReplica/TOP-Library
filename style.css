@@ -94,6 +94,10 @@ body {
   padding-top: 60px;
 }
 
+.drawer > a {
+  text-decoration: none;
+}
+
 .dashboard {
   font-size: clamp(12px, calc(25px + 0.8vw), 50px);
 }
